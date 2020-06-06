@@ -8,6 +8,5 @@ The algorithm has a loose relationship to the k-nearest neighbor classifier, a p
 ## K-Means++
 
 K-Means is quite sensitive to initalization, if the init is not good, our algorithm is not able to make desired number of clusters.
-To overcome this problem, we use technique called K-Means++ (described in paper Robust Seed Selection for K-Means type of Algorithms) which chooses initial centers so that they are statiscallly close to final ones.
+To overcome this problem, we use technique called K-Means++ (described in paper https://arxiv.org/abs/1202.1585) which chooses initial centers so that they are statiscallly close to final ones.
 
-The method is default choice for sklearn, so we will use it directly without going into much maths!
