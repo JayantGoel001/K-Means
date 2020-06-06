@@ -10,3 +10,8 @@ The algorithm has a loose relationship to the k-nearest neighbor classifier, a p
 K-Means is quite sensitive to initalization, if the init is not good, our algorithm is not able to make desired number of clusters.
 To overcome this problem, we use technique called K-Means++ (described in paper https://arxiv.org/abs/1202.1585) which chooses initial centers so that they are statiscallly close to final ones.
 
+## DBSCAN
+
+ * Density Based Spatial Clustering of Applications with Noise
+ * Based upon on the idea, that a cluster is a high density area surrounded by low density region
+ * Starts by exploring a small area, if density is "good enough" it considered as part of cluster, and explores neigbours and so on, so it groups regions based upon density!
