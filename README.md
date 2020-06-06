@@ -4,3 +4,10 @@ k-means clustering is a method of vector quantization, originally from signal pr
 The problem is computationally difficult (NP-hard); however, efficient heuristic algorithms converge quickly to a local optimum. These are usually similar to the expectation-maximization algorithm for mixtures of Gaussian distributions via an iterative refinement approach employed by both k-means and Gaussian mixture modeling. They both use cluster centers to model the data; however, k-means clustering tends to find clusters of comparable spatial extent, while the expectation-maximization mechanism allows clusters to have different shapes.
 
 The algorithm has a loose relationship to the k-nearest neighbor classifier, a popular machine learning technique for classification that is often confused with k-means due to the name. Applying the 1-nearest neighbor classifier to the cluster centers obtained by k-means classifies new data into the existing clusters. This is known as nearest centroid classifier or Rocchio algorithm.
+
+## K-Means++
+
+K-Means is quite sensitive to initalization, if the init is not good, our algorithm is not able to make desired number of clusters.
+To overcome this problem, we use technique called K-Means++ (described in paper Robust Seed Selection for K-Means type of Algorithms) which chooses initial centers so that they are statiscallly close to final ones.
+
+The method is default choice for sklearn, so we will use it directly without going into much maths!
