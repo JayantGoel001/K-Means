@@ -15,3 +15,13 @@ To overcome this problem, we use technique called K-Means++ described in paper [
  * **Density Based Spatial Clustering of Applications with Noise**
  * Based upon on the idea, that a cluster is a high density area surrounded by low density region
  * Starts by exploring a small area, if density is "good enough" it considered as part of cluster, and explores neigbours and so on, so it groups regions based upon density!
+
+
+# **Dominant Color Extraction for Image Segmentation**
+
+  * **Image Segmentation**
+  * Segmentation partitions an image into regions having similar visual appearance corresponding to parts of objects
+  * We will try to extract the most dominant 'K' Colors using K-Means
+  * We can apply K-Means with each pixel will reassigned to the closest of the K Colors, leading to segmentation
+  
+  ![alt text](ImageForMarkDown.png "")
